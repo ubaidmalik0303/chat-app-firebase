@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="top">
+            <div class="circle"></div>
+            <h2 id="friendname" style="text-transform: capitalize;"></h2>
+        </div>
+
+        <div class="mid" id="msgbox">            
+            <!-- <div class="messagemain">
+                <div class="sendermsg">
+                    <p>Hello World</p>
+                </div>
+            </div>
+            <div class="messagesendmain">
+                <div class="sendmsg">
+                    <p>Hello World</p>
+                    <button class="deletebtn">Delete</button>
+                </div>
+            </div> -->
+        </div>
+
+        <div class="bottom">
+            <form onsubmit="return sendMessage()">
+                <input type="message" id="messagebox" placeholder="Type Your Message" autocomplete="off">
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyACy34fEv3PgXtHu5IWlwD8lCmxh8SoeYs",
+            authDomain: "chat-application-665bf.firebaseapp.com",
+            databaseURL: "https://chat-application-665bf.firebaseio.com",
+            projectId: "chat-application-665bf",
+            storageBucket: "chat-application-665bf.appspot.com",
+            messagingSenderId: "662327837037",
+            appId: "1:662327837037:web:bb2fa239b9c2515a81da64"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
